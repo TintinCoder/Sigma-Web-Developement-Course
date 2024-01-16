@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+    <style>
+        :root {
+            --first-color: red;
+            --second-color: blue;
+            --third-color: orange;
+            --fourth-color: lightblue;
+            --bg-color: green;
+        }
+        nav{
+            background-color: var(--bg-color);
+        }
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            list-style-type: none;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .c1 {
+            color: var(--first-color);
+        }
+        .c2 {
+            color: var(--second-color);
+        }
+        .c3 {
+            color: var(--third-color);
+        }
+        .c4 {
+            color: var(--fourth-color);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="c1">Home</li>
+            <li class="c2">About</li>
+            <li class="c3">Services</li>
+            <li class="c4">Contact Us</li>
+        </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exericse 5 | Design This Layout</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav{
+            background-color: pink;
+            height: 10vh;
+            position: sticky;
+            top: 0px;
+            left: 0px;
+        }
+
+        nav > ul {
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+        }
+
+        li {
+            margin: 21px 20px;
+            list-style-type: none;
+            font-weight: bolder;
+            color: black;
+        }
+
+        .boxes {
+            background-color: green;
+            height: 62vh;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .box {
+            /* background-color: red; */
+            height: 50vh;
+            width: 30vw;
+            margin: 30px 100px;
+        }
+
+        .left {
+            background-color: palevioletred;
+            float: left;
+        }
+        
+        .right {
+            background-color: blue;
+            float: right;
+        }
+
+        .text {
+            height: 20vh;
+            width: 60vw;
+            margin: 10px 23%;
+            border: 1px solid black;
+            border-radius: 30px;
+            text-align: center;
+            padding: 50PX;
+            font-size: 25px;
+        }
+
+        footer {
+            height: 10vh;
+            width: 100%;
+            /* border: 1px solid black; */
+            background-color: rgb(174, 255, 255);
+            border-radius: 10px;
+            text-align: center;
+            padding: 20PX;
+        }
+
+        .logo {
+            background-color: orange;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            float: right;
+            margin: 50px 20px;
+            /* position: fixed; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+
+        <div class="boxes">
+            <div class="box left"></div>
+            <div class="box right"></div>
+        </div>
+
+        <div class="logo"></div>
+        
+        <div class="text">
+            <p>Welcome To The Sigma Web Developement Express</p>
+        </div>
+
+        <footer>
+            <p>Copyright All Rights Reserved For Sigma Web Developement Express</p>
+        </footer>
+    </div>
+</body>
+</html>

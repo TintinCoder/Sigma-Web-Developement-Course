@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables in CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --color: blue;
+            --sec-color: lightblue;
+        }
+        
+        .nav {
+            background-color: var(--color);
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul li {
+            list-style-type: none;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .container {
+            background-color: var(--sec-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+        <div class="container">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum beatae deleniti veniam labore corporis? Corporis temporibus reprehenderit molestias dolore sint rerum exercitationem. Labore quo quod nulla provident eveniet deleniti libero tenetur iure impedit tempore odio quis, ducimus placeat error obcaecati inventore quia quos corporis omnis?
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 7 - Design The UltraEdit</title>
+    <style>
+        *{
+            font-family: "Segoe UI";
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            height: 12vh;
+            width: 100%;
+            background-color: white;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            align-content: center;
+        }
+
+        li {
+            list-style-type: none;
+            padding: 10px;
+        }
+
+        .left {
+            margin-right: 40vw;
+        }
+
+        li:hover {
+            cursor: pointer;
+        }
+
+        img:hover {
+            cursor: pointer;
+        }
+
+        .heading {
+            text-align: center;
+            margin-top: 10vh;
+            font-size: 50px;
+            font-weight: 400;
+        }
+
+        .title {
+            font-weight: bolder;
+        }
+
+        .paragraph {
+            text-align: center;
+            margin-top: 10vh;
+            font-size: 28px;
+            margin: 10vh 15vw;
+            font-weight: 300;
+        }
+        
+        .button {
+            text-align: center;
+            background-color: #09A6BD;
+            color: white;
+            padding: 15px 20px;
+            font-weight: bolder;
+            border: none;
+            margin-left: 40%;
+            border-radius: 10px;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <img src="./logo-left.png" alt="Logo">
+        </div>
+        <div class="right">
+            <ul>
+                <li>Products</li>
+                <li>Pricing</li>
+                <li>Resources</li>
+                <li>About Us</li>
+                <img src="./logo-right.png" alt="Logo" class="image-right">
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <h2 class="heading">Download <span class="title">UltraEdit</span> for Windows</h2>
+        <p class="paragraph">Download and try UltraEdit before you buy it! This download includes the full Windows version of the text editor.
+        </p>
+
+        <button class="button">Download Mac Or Linux Version</button>
+    </main>
+</body>
+</html>
