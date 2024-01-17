@@ -71,9 +71,79 @@
             font-weight: bolder;
             border: none;
             margin-left: 40%;
-            border-radius: 10px;
-            font-size: 16px;
+            border-radius: 7px;
+            font-size: 14px;
             text-transform: uppercase;
+        }
+
+        .download-info {
+            display: flex;
+            /* justify-content: space-eve; */
+            align-items: center;
+            margin: 10vh 20vw;
+        }
+
+        .download-info > img {
+            width: 100px;
+            height: auto;
+        }
+
+        /* Styling the grid */
+
+        .box {
+            background-color: #F9F9F9;
+            width: 30vw;
+            height: 26vh;
+            border-radius: 10px;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .box > p {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .box > .buttons > button {
+            margin-top: 20px;
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .box > .buttons > button:nth-child(odd){
+            background-color: #09A6BD;
+            color: white;
+            font-weight: bolder;
+        }
+
+        .box > .buttons > button:nth-child(even){
+            background-color: #81C780;
+            color: white;
+            font-weight: bolder;
+        }
+
+        .boxes {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 40px;
+            margin: 10px 30px;
+        }
+        
+        @media only screen and (max-width: 425px){
+            .boxes {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(1, 1fr);
+                gap: 40px;
+                margin: 0px 50%;
+            }
+
+            .box {
+                width: 90vw;
+            }
         }
     </style>
 </head>
@@ -99,6 +169,94 @@
         </p>
 
         <button class="button">Download Mac Or Linux Version</button>
+        <br>
+        <div class="download-info">
+            <img src="Screenshot 2024-01-17 202218.png" alt="anv"><span class="download">Download UltraEdit</span><span class="version">v2023.2(released 12/15/2023) | Hotflix</span>
+        </div>
+
+        <div class="boxes">
+            <div class="box">
+                <h3>English</h3>
+                <p>English</p>
+                <div class="buttons">
+                    <button>Download 32-bit</button>
+                    <button>Download 64-bit</button>
+                </div>
+            </div>
+            <div class="box">
+                <h3>Deutsch</h3>
+                <p>German</p>
+                <div class="buttons">
+                    <button>Download 32-bit</button>
+                    <button>Download 64-bit</button>
+                </div>
+            </div>
+            <div class="box">
+                <h3>Italiano</h3>
+                <p>Intalian</p>
+                <div class="buttons">
+                    <button>Download 32-bit</button>
+                    <button>Download 64-bit</button>
+                </div>
+            </div>
+            <div class="box">
+                <h3>Español</h3>
+                <p>Spanish</p>
+                <div class="buttons">
+                    <button>Download 32-bit</button>
+                    <button>Download 64-bit</button>
+                </div>
+            </div>
+            <div class="box">
+                <h3>français</h3>
+                <p>French</p>
+                <div class="buttons">
+                    <button>Download 32-bit</button>
+                    <button>Download 64-bit</button>
+                </div>
+            </div>
+            <div class="box">
+                <h3>Português brasileiro</h3>
+                <p>Brazilian Portuguese</p>
+                <div class="buttons">
+                    <button>Download 32-bit</button>
+                    <button>Download 64-bit</button>
+                </div>
+            </div>
+            <div class="box">
+                <h3>日本</h3>
+                <p>Japanese</p>
+                <div class="buttons">
+                    <button>Download 32-bit</button>
+                    <button>Download 64-bit</button>
+                </div>
+            </div>
+            <div class="box">
+                <h3>한국어</h3>
+                <p>Korean</p>
+                <div class="buttons">
+                    <button>Download 32-bit</button>
+                    <button>Download 64-bit</button>
+                </div>
+            </div>
+            <div class="box">
+                <h3>中国</h3>
+                <p>Chinese</p>
+                <div class="buttons">
+                    <button>Download 32-bit</button>
+                    <button>Download 64-bit</button>
+                </div>
+            </div>
+            <div class="box">
+                <h3>中國</h3>
+                <p>Traditional Chinese
+                </p>
+                <div class="buttons">
+                    <button>Download 32-bit</button>
+                    <button>Download 64-bit</button>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 </html>
