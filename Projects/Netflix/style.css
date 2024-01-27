@@ -4,6 +4,11 @@
 
 /* Adding Default Styles */
 
+:root{
+    --red-color: #E50914;
+    --red-color-hover: #C11119;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -105,18 +110,21 @@ nav button {
 /* Designing the top-right 2 buttons */
 
 .sign-in {
-    background-color: #C11119;
+    background-color: var(--red-color);
     color: white;
-    padding: 4px 9px;
+    padding: 1px 9px;
     border: none;
+    font-size: 14px;
     border-radius: 6px;
     font-weight: bolder;
 }
 
 .language {
-    background-color: #C11119;
+    background-color: var(--red-color);
     color: white;
-    padding: 4px 18px;
+    padding: 1px 18px;
+    font-size: 14px;
+    margin-right: 20px;
     border: none;
     border-radius: 6px;
     font-weight: bolder;
@@ -124,12 +132,13 @@ nav button {
 
 /* Designing Email */
 .email{
-    padding: 10px 40px;
+    padding: 10px 20px;
     background-color: rgb(0, 0, 0, 0.2);
     /* background-color: #d1d1d1; */
     color: white;
     font-size: 17px;
     width: 29vw;
+    height: 9vh;
     border-radius: 04px;
     border: 1px solid white;
 }
@@ -139,14 +148,134 @@ nav button {
 }
 
 .email-sub{
-    background-color: #C11119;
+    background-color: var(--red-color);
     color: white;
     padding: 09px 35px;
     font-size: 23px;
     font-weight: bolder;
-    width: 15vw;
+    width: 16.5vw;
+    height: 9vh;
     border: none;
     border-radius: 4px;
 }
 
-/* Design Of Sections(Section - 1) */
+button:hover{
+    background-color: var(--red-color-hover);
+    cursor: pointer;
+}
+
+/* Design Of Section */
+
+#section-1 {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: fit-content;
+}
+
+.text {
+    margin: 25vh 10vw;
+    padding: 10px;
+}
+
+.text > .title {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.text > .para {
+    font-size: 1.3rem;
+}
+
+#section-2 {
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: fit-content;
+}
+
+#section-3 {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: fit-content;
+}
+
+#section-4 {
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: fit-content;
+}
+
+/* FAQs Section */
+
+.heading {
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+.faqs-sec {
+    padding: 10px 10%;
+}
+
+.box {
+    color: white;
+    background-color: #414141;
+    height: 11vh;
+    padding: 18px 10px;
+    font-size: 1.4rem;
+    display: flex;
+    font-weight: 100;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+.box>p {
+    font-weight: 100;
+}
+
+.box > p:nth-child(2){
+    font-size: 2rem;
+    margin: -13px 0px;
+    font-weight: 100;
+}
+
+.ready-to-watch {
+    margin-left: 31vw;
+}
+
+.ready-to-watch > p{
+    font-size: 20px;
+    margin: 10px 1px;
+    /* text-align: center; */
+}
+
+/* Designing The Footer */
+
+.footer {
+    color: #B3B3B3;
+    margin: 10vh 10vw;
+    font-size: 15px;
+}
+
+footer > p > span {
+    text-decoration: underline;
+}
+
+.grid {
+    margin: 30px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid > p {
+    text-decoration: underline;
+}
