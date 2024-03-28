@@ -15,6 +15,11 @@ app.get('/', (req, res) => {
     res.send('Hello World!');
 });
 
+app.get('/getTodo', (req, res)=>{
+    let todo = Todo.findOne({})
+    res.json({title: todo.title, desc: todo.desc, isDone: todo.isDone})
+})
+
 app.listen(port, () => {
     console.log(`Server is listening on port ${port}`);
 });
