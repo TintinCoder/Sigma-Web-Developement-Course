@@ -1,47 +1,70 @@
-console.log("Loops in JavaScript")
+// Loops in javascript
+// 1. For Loop
 
-let a = 1;
-
-// For Loops
-
-// for (let i = 0; i < 101; i++) {
-//     console.log(i)
+// let a = 0;
+// for (let i = 0; i < 10; i++) {
+//     console.log(a++)
 // }
 
-// For In loop
-
+// 2. For in
 // let obj = {
-//     name: "Harry",
-//     role: "Programmer",
-//     company: "Google"
+//     name: "Divyam Yadav",
+//     age: 14,
+//     class: "IXth G",
+//     sport: "Tennis",
+//     forFitness: "Gym"
 // }
 
 // for (const key in obj) {
-//     if (Object.hasOwnProperty.call(obj, key)) {
-//         const element = obj[key];
-//         console.log(element)
-//     }
+//     console.log(obj[key])
+// }
+// 3. For in
+
+// for (const iterator of ["Divyam", "Rajat", "Kirti", "Harry", "Siddharth"]) {
+//     console.log(iterator)
 // }
 
-// For of loop
-
-// for (const c of "Tinny") {
-//     console.log(c)
+// 4. While Loop
+// i = 2;
+// while (i>1){
+//     console.log(i++)
 // }
 
-// While loop
-
-// let i = -10;
-// while(i<6){
-//     console.log(i)
-//     i++;
-// }
-
-// Do-While loop
-
-// let i =0;
-
+// 5. Do While Loop
+// let i = 0;
 // do {
 //     console.log(i)
 //     i++;
-// } while (10>5);
+// } while (i<10)
+
+// Questions -->
+// let obj = {
+//     harry: 98,
+//     rohan: 89,
+//     akash: 9
+// }
+
+// for (const key in obj) {
+//     // if (Object.hasOwnProperty.call(object, key)) {
+//     const element = obj[key];
+//     console.log(element)
+// }
+
+// let correctInt = 23;
+// let guess
+
+// do {
+//     guess = prompt("Guess")
+//     if(guess == correctInt){
+//         break;
+//     } else {
+//         continue
+//     }
+// } while (guess == correctInt)
+
+let a = 0;
+for (let i = 0; i < 6; i++) {
+    const element = (a[i]);
+    a++;
+    console.log(element/5)
+}

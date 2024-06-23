@@ -1,1 +1,0 @@
-console.log("Video 71 - Inserting and Removing Elements From DOM")

@@ -7,30 +7,31 @@
 
 */
 
-let possibity = (Math.random() * 100).toFixed(0);
+let possibility = (Math.random() * 100).toFixed(0);
 
-const num1 = Number.parseInt(prompt("Enter the first number -: "))
-const num2 = Number.parseInt(prompt("Enter the second number -: "))
-const operator = prompt("Enter the operation you want -: ")
+let num1 = Number.parseInt(prompt("Enter the first number --> "))
+let num2 = Number.parseInt(prompt("Enter the second number --> "))
+let operation = prompt('Enter the operation --> ')
+console.log(possibility)
 
-if(possibity <= 10){
-    if(operator == "+"){
-        alert(num1-num2)
-    } else if(operator == "*"){
-        alert(num1+num2)
-    } else if(operator == "-"){
-        alert(num1/num2)
-    } else if(operator == "/"){
-        alert(num1**num2)
+if(possibility > 0 && possibility <=10){
+    if(operation == "+"){
+        console.log(num1-num2)
+    } else if(operation == '-'){
+        console.log(num1/num2)
+    } else if(operation == '*'){
+        console.log(num1+num2)
+    } else if(operation == '/'){
+        console.log(num1**num2)
     }
-} else if(possibity > 10) {
-    if(operator == "+"){
-        alert(num1+num2)
-    } else if(operator == "-"){
-        alert(num1-num2)
-    } else if(operator == "*"){
-        alert(num1*num2)
-    } else if(operator == "/"){
-        alert(num1/num2)
+} else {
+    if(operation == "+"){
+        console.log(num1+num2)
+    } else if(operation == '-'){
+        console.log(num1-num2)
+    } else if(operation == '*'){
+        console.log(num1*num2)
+    } else if(operation == '/'){
+        console.log(num1/num2)
     }
 }
